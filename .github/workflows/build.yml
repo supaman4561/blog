@@ -19,7 +19,7 @@ jobs:
       - name: Log in to Harbor
         uses: docker/login-action@v2
         with:
-          registry: your-harbor-registry.com
+          registry: ${{ secrets.HARBOR_URL }}
           username: ${{ secrets.HARBOR_ROBOT_USERNAME }}
           password: ${{ secrets.HARBOR_ROBOT_PASSWORD }}
 
