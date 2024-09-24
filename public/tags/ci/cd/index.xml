@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD on supaman</title>
+    <link>http://localhost:61617/tags/ci/cd/</link>
+    <description>Recent content in CI/CD on supaman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2024 supaman</copyright>
+    <lastBuildDate>Fri, 13 Sep 2024 18:00:00 +0900</lastBuildDate><atom:link href="http://localhost:61617/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>github-actionからraspberrypiで構築したk8sにアプリをデプロイする</title>
+      <link>http://localhost:61617/posts/20240913_raspberrypi-github-action/</link>
+      <pubDate>Fri, 13 Sep 2024 18:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:61617/posts/20240913_raspberrypi-github-action/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
