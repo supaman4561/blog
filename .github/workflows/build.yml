@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.HARBOR_ROBOT_PASSWORD }}
 
       - name: Build the Docker image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
