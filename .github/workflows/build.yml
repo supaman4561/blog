@@ -25,6 +25,7 @@ jobs:
           registry: https://harbor.supaperman.net
           username: ${{ secrets.HARBOR_ROBOT_USERNAME }}
           password: ${{ secrets.HARBOR_ROBOT_PASSWORD }}
+          insecure: true
 
       - name: Build the Docker image
         uses: docker/build-push-action@v4
