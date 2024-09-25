@@ -16,9 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: confirm variable
-        run: echo ${{ secrets.HARBOR_ROBOT_USERNAME }}
-
       - name: Log in to Harbor
         uses: docker/login-action@v3
         with:
@@ -32,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.HARBOR_URL }}/$PROJECT_NAME/$IMAGE_NAME:$TAG
+          tags: ${{ secrets.HARBOR_URL }}/${{ env.PROJECT_NAME }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
