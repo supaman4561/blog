@@ -16,16 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: confirm tls
-        run: openssl s_client -connect harbor.supaperman.net:443 -showcerts
-
-      - name: curl harbor
-        run: curl https://harbor.supaperman.net
-
       - name: Log in to Harbor
         uses: docker/login-action@v3
         with:
-          registry: https://harbor.supaperman.net
+          registry: harbor.supaperman.net
           username: ${{ secrets.HARBOR_ROBOT_USERNAME }}
           password: ${{ secrets.HARBOR_ROBOT_PASSWORD }}
 
