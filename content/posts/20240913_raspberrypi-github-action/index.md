@@ -73,6 +73,15 @@ Error: buildx failed with: </html>
 ちなみに有料版だと500MB
 
 imageのサイズを小さくする。
+マルチステージビルドにしてイメージサイズを削減
+pushに成功
+
+helmコマンド上でimageをpullする。
+```
+Failed to pull image "harbor.supaperman.net/blog/blog:latest": failed to pull and unpack image "harbor.supaperman.net/blog/blog:latest": failed
+│  to resolve reference "harbor.supaperman.net/blog/blog:latest": pull access denied, repository does not exist or may require authorization: authorization failed: no basic auth credentials
+```
+imageのpull設定publicにするのが早そう
 
 ## Action Items
 - https://qiita.com/gretchi/items/1032a25c5e1a1e77aee8
