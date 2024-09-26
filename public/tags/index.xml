@@ -2,38 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on supaman</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:1314/tags/</link>
     <description>Recent content in Tags on supaman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>© 2024 supaman</copyright>
-    <lastBuildDate>Sat, 07 Sep 2024 00:48:57 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Sep 2024 04:17:57 +0900</lastBuildDate><atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Rust</title>
-      <link>http://localhost:1313/tags/rust/</link>
-      <pubDate>Sat, 07 Sep 2024 00:48:57 +0900</pubDate>
+      <title>Blowfish</title>
+      <link>http://localhost:1314/tags/blowfish/</link>
+      <pubDate>Fri, 27 Sep 2024 04:17:57 +0900</pubDate>
       
-      <guid>http://localhost:1313/tags/rust/</guid>
+      <guid>http://localhost:1314/tags/blowfish/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>K8s</title>
-      <link>http://localhost:1313/tags/k8s/</link>
-      <pubDate>Fri, 06 Sep 2024 04:52:30 +0900</pubDate>
+      <title>Hugo</title>
+      <link>http://localhost:1314/tags/hugo/</link>
+      <pubDate>Fri, 27 Sep 2024 04:17:57 +0900</pubDate>
       
-      <guid>http://localhost:1313/tags/k8s/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Raspberrypi</title>
-      <link>http://localhost:1313/tags/raspberrypi/</link>
-      <pubDate>Fri, 06 Sep 2024 04:52:30 +0900</pubDate>
-      
-      <guid>http://localhost:1313/tags/raspberrypi/</guid>
+      <guid>http://localhost:1314/tags/hugo/</guid>
       <description></description>
       
     </item>

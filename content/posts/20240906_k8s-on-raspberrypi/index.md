@@ -3,7 +3,7 @@ title: "k8s on raspberrypi"
 date: 2024-09-06T04:52:30+09:00
 tags: [k8s, raspberrypi]
 categories: [k8s]
-draft: false
+draft: true
 ---
 
 ### 環境
@@ -187,8 +187,8 @@ $ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Docum
 worker node 追加コマンド
 (kubeadm を実行すると発行される)
 ```
-kubeadm join 192.168.40.101:6443 --token ifys4k.v2qbbbs7ce9e34fi \
-        --discovery-token-ca-cert-hash sha256:acac3d22c2d8d1b70254b01dce0e5a6233b1a629f94627460fa9b38464d469f0
+kubeadm join 192.168.40.101:6443 --token <token>\
+        --discovery-token-ca-cert-hash sha256:<hash>
 ```
 再生成は以下のコマンド
 ```
