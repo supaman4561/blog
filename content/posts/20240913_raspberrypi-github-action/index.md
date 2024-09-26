@@ -42,6 +42,38 @@ $ docker tag $IMAGE_NAME:$TAG https://harbor.supaperman.net/$PROJECT_NAME/$IMAGE
 $ docker push https://harbor.supaperman.net/$PROJECT_NAME/$IMAGE_NAME:$TAG
 ```
 
+docker/build-push-action@v6での実行結果
+```
+#11 pushing layer bb01bd7e32b5 166.3s done
+#11 ERROR: unknown: <html>
+<head><title>413 Request Entity Too Large</title></head>
+<body>
+<center><h1>413 Request Entity Too Large</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+------
+ > pushing ***/blog/blog:latest with docker:
+------
+ERROR: unknown: <html>
+<head><title>413 Request Entity Too Large</title></head>
+<body>
+<center><h1>413 Request Entity Too Large</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+Reference
+Check build summary support
+Error: buildx failed with: </html>
+```
+
+どうやら無料版のcloudflareでproxyしていると100MBというアップロードサイズ制限があるらしい。
+ちなみに有料版だと500MB
+
+imageのサイズを小さくする。
+
 ## Action Items
 - https://qiita.com/gretchi/items/1032a25c5e1a1e77aee8
 
