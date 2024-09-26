@@ -30,5 +30,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.HARBOR_URL }}/${{ env.PROJECT_NAME }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
-          platforms:
-            - linux/arm64
+          platforms: linux/arm64
