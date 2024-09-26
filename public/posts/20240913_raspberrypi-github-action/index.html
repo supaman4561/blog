@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61617&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55975&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="ja" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="raspberrypi, CI/CD, " />
   
   
-  <link rel="canonical" href="http://localhost:61617/posts/20240913_raspberrypi-github-action/" />
+  <link rel="canonical" href="http://localhost:55975/posts/20240913_raspberrypi-github-action/" />
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:61617/posts/20240913_raspberrypi-github-action/">
+  <meta property="og:url" content="http://localhost:55975/posts/20240913_raspberrypi-github-action/">
   <meta property="og:site_name" content="supaman">
   <meta property="og:title" content="github-actionからraspberrypiで構築したk8sにアプリをデプロイする">
   <meta property="og:locale" content="ja">
@@ -92,7 +92,7 @@
     
     
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:61617\/posts\/20240913_raspberrypi-github-action\/",
+    "url" : "http:\/\/localhost:55975\/posts\/20240913_raspberrypi-github-action\/",
     "author" : {
       "@type": "Person",
       "name": "supaman"
@@ -106,7 +106,7 @@
     "keywords": ["raspberrypi","CI/CD"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "43"
+    "wordCount": "151"
   }]
   </script>
 
@@ -496,7 +496,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-13T18:00:00&#43;09:00">2024-09-13</time><span class="px-2 text-primary-500">&middot;</span><span>43 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
+  <time datetime="2024-09-13T18:00:00&#43;09:00">2024-09-13</time><span class="px-2 text-primary-500">&middot;</span><span>151 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
   
 
   
@@ -846,13 +846,46 @@
 </h3>
 <p>参考
 <a href="https://goharbor.io/docs/1.10/administration/configure-authentication/oidc-auth/" target="_blank">https://goharbor.io/docs/1.10/administration/configure-authentication/oidc-auth/</a></p>
-<p>robotアカウントを作成
-robot$test
-sVThqUIgFOATO130MdEKeZwqgDGsPq6c</p>
 <pre tabindex="0"><code>$ docker login https://harbor.supaperman.net
 Username: &lt;Username&gt;
 Password: &lt;Password&gt;
-</code></pre>
+</code></pre><p>tag</p>
+<pre tabindex="0"><code>$ docker tag $IMAGE_NAME:$TAG https://harbor.supaperman.net/$PROJECT_NAME/$IMAGE_NAME:$TAG
+$ docker push https://harbor.supaperman.net/$PROJECT_NAME/$IMAGE_NAME:$TAG
+</code></pre><p>docker/build-push-action@v6での実行結果</p>
+<pre tabindex="0"><code>#11 pushing layer bb01bd7e32b5 166.3s done
+#11 ERROR: unknown: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;413 Request Entity Too Large&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;413 Request Entity Too Large&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+------
+ &gt; pushing ***/blog/blog:latest with docker:
+------
+ERROR: unknown: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;413 Request Entity Too Large&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;413 Request Entity Too Large&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Reference
+Check build summary support
+Error: buildx failed with: &lt;/html&gt;
+</code></pre><p>どうやら無料版のcloudflareでproxyしていると100MBというアップロードサイズ制限があるらしい。
+ちなみに有料版だと500MB</p>
+<p>imageのサイズを小さくする。
+マルチステージビルドにしてイメージサイズを削減
+pushに成功</p>
+<p>helmコマンド上でimageをpullする。</p>
+<pre tabindex="0"><code>Failed to pull image &#34;harbor.supaperman.net/blog/blog:latest&#34;: failed to pull and unpack image &#34;harbor.supaperman.net/blog/blog:latest&#34;: failed
+│  to resolve reference &#34;harbor.supaperman.net/blog/blog:latest&#34;: pull access denied, repository does not exist or may require authorization: authorization failed: no basic auth credentials
+</code></pre><p>imageのpull設定publicにするのが早そう</p>
+
 
 <h2 class="relative group">Action Items 
     <div id="action-items" class="anchor"></div>
@@ -889,6 +922,14 @@ Password: &lt;Password&gt;
   <a href="/posts/20240906_k8s-on-raspberrypi/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+      <span class="absolute top-0 right-0 m-2">
+        <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    下書き
+  </span>
+</span>
+      </span>
+      
 
       <div class="px-6 py-4">
 
@@ -1011,6 +1052,14 @@ Password: &lt;Password&gt;
   <a href="/posts/20240907_rust-compete/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+      <span class="absolute top-0 right-0 m-2">
+        <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    下書き
+  </span>
+</span>
+      </span>
+      
 
       <div class="px-6 py-4">
 
@@ -1120,136 +1169,6 @@ Password: &lt;Password&gt;
   </a>
 
   
-  
-
-  <a href="/posts/20240906_hugo-blowfish/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-      <span class="absolute top-0 right-0 m-2">
-        <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    下書き
-  </span>
-</span>
-      </span>
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/20240906_hugo-blowfish/">Hugo+Blowfishで個人ブログを作成する</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2024-09-06T00:48:57&#43;09:00">2024-09-06</time><span class="px-2 text-primary-500">&middot;</span><span>49 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/blog/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blog
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Hugo
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blowfish/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Blowfish
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -1308,6 +1227,28 @@ Password: &lt;Password&gt;
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/20240927_first-post/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >はじめての記事</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-09-27T04:02:24&#43;09:00">2024-09-27</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
@@ -1394,7 +1335,7 @@ Password: &lt;Password&gt;
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:61617/"
+  data-url="http://localhost:55975/"
   style="z-index:500"
 >
   <div

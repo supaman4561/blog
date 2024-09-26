@@ -1,15 +1,14 @@
 ---
 title: "Hugo+Blowfishで個人ブログを作成する"
-date: 2024-09-06T00:48:57+09:00
+date: 2024-09-27T04:17:57+09:00
 tags: [hugo, blowfish]
 categories: [blog]
-draft: true
+draft: false
 ---
 
 n番煎じという感じですが、このブログ作成時の備忘録として残しておきます。
 
 ## What is
----
 
 ### Hugo
 Static Site Generatorの一つです。  
