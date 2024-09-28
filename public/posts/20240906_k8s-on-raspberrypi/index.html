@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55975&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="ja" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="k8s, raspberrypi, " />
   
   
-  <link rel="canonical" href="http://localhost:55975/posts/20240906_k8s-on-raspberrypi/" />
+  <link rel="canonical" href="http://localhost:1313/posts/20240906_k8s-on-raspberrypi/" />
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:55975/posts/20240906_k8s-on-raspberrypi/">
+  <meta property="og:url" content="http://localhost:1313/posts/20240906_k8s-on-raspberrypi/">
   <meta property="og:site_name" content="supaman">
   <meta property="og:title" content="k8s on raspberrypi">
   <meta property="og:locale" content="ja">
@@ -92,7 +92,7 @@
     
     
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:55975\/posts\/20240906_k8s-on-raspberrypi\/",
+    "url" : "http:\/\/localhost:1313\/posts\/20240906_k8s-on-raspberrypi\/",
     "author" : {
       "@type": "Person",
       "name": "supaman"
@@ -106,7 +106,7 @@
     "keywords": ["k8s","raspberrypi"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "514"
+    "wordCount": "513"
   }]
   </script>
 
@@ -154,6 +154,15 @@
 
   
   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z92NT4L27"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3Z92NT4L27');
+</script>
 
 
 
@@ -496,7 +505,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-06T04:52:30&#43;09:00">2024-09-06</time><span class="px-2 text-primary-500">&middot;</span><span>514 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">3 分</span>
+  <time datetime="2024-09-06T04:52:30&#43;09:00">2024-09-06</time><span class="px-2 text-primary-500">&middot;</span><span>513 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">3 分</span>
   
 
   
@@ -1110,8 +1119,8 @@ $ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 </h3>
 <p>worker node 追加コマンド
 (kubeadm を実行すると発行される)</p>
-<pre tabindex="0"><code>kubeadm join 192.168.40.101:6443 --token ifys4k.v2qbbbs7ce9e34fi \
-        --discovery-token-ca-cert-hash sha256:acac3d22c2d8d1b70254b01dce0e5a6233b1a629f94627460fa9b38464d469f0
+<pre tabindex="0"><code>kubeadm join 192.168.40.101:6443 --token &lt;token&gt;\
+        --discovery-token-ca-cert-hash sha256:&lt;hash&gt;
 </code></pre><p>再生成は以下のコマンド</p>
 <pre tabindex="0"><code>$ kubeadm token create --print-join-command
 </code></pre>
@@ -1369,7 +1378,7 @@ sudo tar Cxzvvf /usr/local/bin nerdctl-1.7.4-linux-arm64.tar.gz
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:55975/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div
