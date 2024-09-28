@@ -2,38 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>supaman</title>
-    <link>http://localhost:1314/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on supaman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>© 2024 supaman</copyright>
-    <lastBuildDate>Fri, 27 Sep 2024 04:17:57 +0900</lastBuildDate><atom:link href="http://localhost:1314/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Sep 2024 04:17:57 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo&#43;Blowfishで個人ブログを作成する</title>
-      <link>http://localhost:1314/posts/20240928_hugo-blowfish/</link>
+      <link>http://localhost:1313/posts/20240928_hugo-blowfish/</link>
       <pubDate>Fri, 27 Sep 2024 04:17:57 +0900</pubDate>
       
-      <guid>http://localhost:1314/posts/20240928_hugo-blowfish/</guid>
+      <guid>http://localhost:1313/posts/20240928_hugo-blowfish/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>はじめての記事</title>
-      <link>http://localhost:1314/posts/20240927_first-post/</link>
+      <link>http://localhost:1313/posts/20240927_first-post/</link>
       <pubDate>Fri, 27 Sep 2024 04:02:24 +0900</pubDate>
       
-      <guid>http://localhost:1314/posts/20240927_first-post/</guid>
+      <guid>http://localhost:1313/posts/20240927_first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>github-actionからraspberrypiで構築したk8sにアプリをデプロイする</title>
+      <link>http://localhost:1313/posts/20240913_raspberrypi-github-action/</link>
+      <pubDate>Fri, 13 Sep 2024 18:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20240913_raspberrypi-github-action/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>【競プロ】RustのBTreeSetでlower_bound</title>
+      <link>http://localhost:1313/posts/20240907_rust-compete/</link>
+      <pubDate>Sat, 07 Sep 2024 00:48:57 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20240907_rust-compete/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>k8s on raspberrypi</title>
+      <link>http://localhost:1313/posts/20240906_k8s-on-raspberrypi/</link>
+      <pubDate>Fri, 06 Sep 2024 04:52:30 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20240906_k8s-on-raspberrypi/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1314/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1314/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
       
     </item>

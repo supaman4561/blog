@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="ja" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="hugo, blowfish, " />
   
   
-  <link rel="canonical" href="http://localhost:1314/posts/20240928_hugo-blowfish/" />
+  <link rel="canonical" href="http://localhost:1313/posts/20240928_hugo-blowfish/" />
   
   
   
@@ -66,7 +66,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1314/posts/20240928_hugo-blowfish/">
+  <meta property="og:url" content="http://localhost:1313/posts/20240928_hugo-blowfish/">
   <meta property="og:site_name" content="supaman">
   <meta property="og:title" content="Hugo&#43;Blowfishで個人ブログを作成する">
   <meta property="og:locale" content="ja">
@@ -92,7 +92,7 @@
     
     
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1314\/posts\/20240928_hugo-blowfish\/",
+    "url" : "http:\/\/localhost:1313\/posts\/20240928_hugo-blowfish\/",
     "author" : {
       "@type": "Person",
       "name": "supaman"
@@ -106,7 +106,7 @@
     "keywords": ["hugo","blowfish"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "49"
+    "wordCount": "88"
   }]
   </script>
 
@@ -154,6 +154,15 @@
 
   
   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z92NT4L27"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3Z92NT4L27');
+</script>
 
 
 
@@ -496,7 +505,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-27T04:17:57&#43;09:00">2024-09-27</time><span class="px-2 text-primary-500">&middot;</span><span>49 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
+  <time datetime="2024-09-27T04:17:57&#43;09:00">2024-09-27</time><span class="px-2 text-primary-500">&middot;</span><span>88 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
   
 
   
@@ -672,13 +681,14 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is">What is</a>
+    <li><a href="#ツール類の紹介">ツール類の紹介</a>
       <ul>
         <li><a href="#hugo">Hugo</a></li>
         <li><a href="#blowfish">Blowfish</a></li>
       </ul>
     </li>
-    <li><a href="#build">Build</a></li>
+    <li><a href="#ローカルサーバーの立ち上げ">ローカルサーバーの立ち上げ</a></li>
+    <li><a href="#コンテンツの追加">コンテンツの追加</a></li>
   </ul>
 </nav>
   </div>
@@ -692,13 +702,14 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is">What is</a>
+    <li><a href="#ツール類の紹介">ツール類の紹介</a>
       <ul>
         <li><a href="#hugo">Hugo</a></li>
         <li><a href="#blowfish">Blowfish</a></li>
       </ul>
     </li>
-    <li><a href="#build">Build</a></li>
+    <li><a href="#ローカルサーバーの立ち上げ">ローカルサーバーの立ち上げ</a></li>
+    <li><a href="#コンテンツの追加">コンテンツの追加</a></li>
   </ul>
 </nav>
   </div>
@@ -745,13 +756,13 @@
           <p>n番煎じという感じですが、このブログ作成時の備忘録として残しておきます。</p>
 
 
-<h2 class="relative group">What is 
-    <div id="what-is" class="anchor"></div>
+<h2 class="relative group">ツール類の紹介 
+    <div id="%E3%83%84%E3%83%BC%E3%83%AB%E9%A1%9E%E3%81%AE%E7%B4%B9%E4%BB%8B" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#what-is" aria-label="アンカー">#</a>
+            style="text-decoration-line: none !important;" href="#%E3%83%84%E3%83%BC%E3%83%AB%E9%A1%9E%E3%81%AE%E7%B4%B9%E4%BB%8B" aria-label="アンカー">#</a>
     </span>        
     
 </h2>
@@ -788,13 +799,13 @@ Tag, Category機能がある &amp; Postsをカード表示できてモダンな�
 <a href="https://github.com/nunocoracao/blowfish" target="_blank">https://github.com/nunocoracao/blowfish</a></p>
 
 
-<h2 class="relative group">Build 
-    <div id="build" class="anchor"></div>
+<h2 class="relative group">ローカルサーバーの立ち上げ 
+    <div id="%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#build" aria-label="アンカー">#</a>
+            style="text-decoration-line: none !important;" href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92" aria-label="アンカー">#</a>
     </span>        
     
 </h2>
@@ -805,11 +816,42 @@ Tag, Category機能がある &amp; Postsをカード表示できてモダンな�
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install hugo
 </span></span></code></pre></div><p>新規サイトの構築</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">hugo new site mySite
-</span></span></code></pre></div><p>今回はgit submoduleでBlowfishを導入します。</p>
+</span></span></code></pre></div><p>既存のディレクトリ上にサイトを構築する場合は以下のコマンドで作成できます。<br>
+github等で先にリポジトリを作成してからサイトを構築する場合に使えます。</p>
+<pre tabindex="0"><code>hugo new site . --force
+</code></pre><p>サイトを作成したらgit submoduleでBlowfishを導入します。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> mySite
 </span></span><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>次に<code>themes/blowfish/config</code>ディレクトリをプロジェクトのルートにコピーします。</p>
+<pre tabindex="0"><code>cp -r themes/blowfish/config/ .
+</code></pre><p><code>config/_default/hugo.toml</code>を編集します。
+theme = &ldquo;blowfish&quot;のコメントアウトを解除します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml:hugo.toml" data-lang="toml:hugo.toml"><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;blowfish&#34;</span>
+</span></span></code></pre></div><p>これでブログとしては見える状態になりました。<br>
+サーバーを立ち上げて確認してみます。</p>
+<pre tabindex="0"><code>hugo server -D
+</code></pre>
+
+<h2 class="relative group">コンテンツの追加 
+    <div id="%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E8%BF%BD%E5%8A%A0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E8%BF%BD%E5%8A%A0" aria-label="アンカー">#</a>
+    </span>        
+    
+</h2>
+<p>あとはconfig/のtomlファイルたちをいじってタイトルや見た目を変えたり、contentにmarkdownを追加すればいい感じになります。
+contentの追加のコマンドは以下でできます。</p>
+<pre tabindex="0"><code>hugo new &lt;new markdown path&gt;
+</code></pre><p>自分はcontent/posts/以下にディレクトリを切って作成しているので、こんな感じで作ってます。</p>
+<pre tabindex="0"><code>hugo new posts/yyyymmdd_&lt;title&gt;/index.md
+</code></pre><p>ここまででローカル上でのblogの構築が完了しました。
+気分が乗ればどうデプロイしているのかの話を書き連ねようと思いますが、それはまた別のpostで&hellip;</p>
+
           
           
           
@@ -900,6 +942,258 @@ Tag, Category機能がある &amp; Postsをカード表示できてモダンな�
   
   
   
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/posts/20240913_raspberrypi-github-action/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+      <span class="absolute top-0 right-0 m-2">
+        <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    下書き
+  </span>
+</span>
+      </span>
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/20240913_raspberrypi-github-action/">github-actionからraspberrypiで構築したk8sにアプリをデプロイする</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-13T18:00:00&#43;09:00">2024-09-13</time><span class="px-2 text-primary-500">&middot;</span><span>151 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/k8s/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    K8s
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/raspberrypi/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Raspberrypi
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ci/cd/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CI/CD
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/posts/20240907_rust-compete/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+      <span class="absolute top-0 right-0 m-2">
+        <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    下書き
+  </span>
+</span>
+      </span>
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/20240907_rust-compete/">【競プロ】RustのBTreeSetでlower_bound</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-07T00:48:57&#43;09:00">2024-09-07</time><span class="px-2 text-primary-500">&middot;</span><span>32 文字</span><span class="px-2 text-primary-500">&middot;</span><span title="読むのに必要な時間">1 分</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AB%B6%E3%83%97%E3%83%AD/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    競プロ
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rust/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Rust
+  </span>
+</span>
+  </span>
   
   
   
@@ -1064,7 +1358,7 @@ Tag, Category機能がある &amp; Postsをカード表示できてモダンな�
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1314/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div
