@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K8s on supaman</title>
-    <link>http://localhost:1313/tags/k8s/</link>
+    <link>http://localhost:51793/tags/k8s/</link>
     <description>Recent content in K8s on supaman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>© 2024 supaman</copyright>
-    <lastBuildDate>Fri, 06 Sep 2024 04:52:30 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Sep 2024 04:52:30 +0900</lastBuildDate><atom:link href="http://localhost:51793/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>k8s on raspberrypi</title>
-      <link>http://localhost:1313/posts/20240906_k8s-on-raspberrypi/</link>
+      <link>http://localhost:51793/posts/20240906_k8s-on-raspberrypi/</link>
       <pubDate>Fri, 06 Sep 2024 04:52:30 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20240906_k8s-on-raspberrypi/</guid>
+      <guid>http://localhost:51793/posts/20240906_k8s-on-raspberrypi/</guid>
       <description></description>
       
     </item>

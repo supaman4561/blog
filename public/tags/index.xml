@@ -28,45 +28,5 @@
       
     </item>
     
-    <item>
-      <title>CI/CD</title>
-      <link>http://localhost:1313/tags/ci/cd/</link>
-      <pubDate>Fri, 13 Sep 2024 18:00:00 +0900</pubDate>
-      
-      <guid>http://localhost:1313/tags/ci/cd/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Raspberrypi</title>
-      <link>http://localhost:1313/tags/raspberrypi/</link>
-      <pubDate>Fri, 13 Sep 2024 18:00:00 +0900</pubDate>
-      
-      <guid>http://localhost:1313/tags/raspberrypi/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>http://localhost:1313/tags/rust/</link>
-      <pubDate>Sat, 07 Sep 2024 00:48:57 +0900</pubDate>
-      
-      <guid>http://localhost:1313/tags/rust/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>K8s</title>
-      <link>http://localhost:1313/tags/k8s/</link>
-      <pubDate>Fri, 06 Sep 2024 04:52:30 +0900</pubDate>
-      
-      <guid>http://localhost:1313/tags/k8s/</guid>
-      <description></description>
-      
-    </item>
-    
   </channel>
 </rss>

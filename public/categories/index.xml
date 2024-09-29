@@ -18,25 +18,5 @@
       
     </item>
     
-    <item>
-      <title>K8s</title>
-      <link>http://localhost:1313/categories/k8s/</link>
-      <pubDate>Fri, 13 Sep 2024 18:00:00 +0900</pubDate>
-      
-      <guid>http://localhost:1313/categories/k8s/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>競プロ</title>
-      <link>http://localhost:1313/categories/%E7%AB%B6%E3%83%97%E3%83%AD/</link>
-      <pubDate>Sat, 07 Sep 2024 00:48:57 +0900</pubDate>
-      
-      <guid>http://localhost:1313/categories/%E7%AB%B6%E3%83%97%E3%83%AD/</guid>
-      <description></description>
-      
-    </item>
-    
   </channel>
 </rss>
