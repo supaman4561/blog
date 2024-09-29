@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.supaperman.net/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/20240928_hugo-blowfish/</loc>
+    <loc>https://blog.supaperman.net/posts/20240928_hugo-blowfish/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.supaperman.net/posts/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/20240927_first-post/</loc>
+    <loc>https://blog.supaperman.net/posts/20240927_first-post/</loc>
     <lastmod>2024-09-27T04:02:24+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://blog.supaperman.net/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

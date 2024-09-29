@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>supaman</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.supaperman.net/</link>
     <description>Recent content on supaman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>© 2024 supaman</copyright>
-    <lastBuildDate>Fri, 27 Sep 2024 04:17:57 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Sep 2024 04:17:57 +0900</lastBuildDate><atom:link href="https://blog.supaperman.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo&#43;Blowfishで個人ブログを作成する</title>
-      <link>http://localhost:1313/posts/20240928_hugo-blowfish/</link>
+      <link>https://blog.supaperman.net/posts/20240928_hugo-blowfish/</link>
       <pubDate>Fri, 27 Sep 2024 04:17:57 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20240928_hugo-blowfish/</guid>
+      <guid>https://blog.supaperman.net/posts/20240928_hugo-blowfish/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>はじめての記事</title>
-      <link>http://localhost:1313/posts/20240927_first-post/</link>
+      <link>https://blog.supaperman.net/posts/20240927_first-post/</link>
       <pubDate>Fri, 27 Sep 2024 04:02:24 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20240927_first-post/</guid>
+      <guid>https://blog.supaperman.net/posts/20240927_first-post/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://blog.supaperman.net/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://blog.supaperman.net/about/</guid>
       <description></description>
       
     </item>
