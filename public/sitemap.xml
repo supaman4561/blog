@@ -3,31 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.supaperman.net/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.supaperman.net/posts/20240928_hugo-blowfish/</loc>
+    <loc>http://localhost:1313/posts/20240928_hugo-blowfish/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.supaperman.net/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-09-27T04:17:57+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.supaperman.net/posts/20240927_first-post/</loc>
+    <loc>http://localhost:1313/posts/20240927_first-post/</loc>
     <lastmod>2024-09-27T04:02:24+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.supaperman.net/about/</loc>
+    <loc>http://localhost:1313/posts/20240913_raspberrypi-github-action/</loc>
+    <lastmod>2024-09-13T18:00:00+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/20240907_rust-compete/</loc>
+    <lastmod>2024-09-07T00:48:57+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/20240906_k8s-on-raspberrypi/</loc>
+    <lastmod>2024-09-06T04:52:30+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
