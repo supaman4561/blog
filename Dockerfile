@@ -15,5 +15,6 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["git", "submodule", "update", "--init", "--recursive"]
-CMD ["hugo", "server", "--environment", "production", "--bind", "0.0.0.0", "--port", "1313", "--watch"]
+RUN chmod +x ./start.sh
+
+CMD ["./start.sh"]
