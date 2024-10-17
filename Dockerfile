@@ -7,12 +7,14 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v0.134.3/hugo_extend
 
 FROM alpine:latest
 
-RUN apk add --no-cache libc6-compat libstdc++ libgcc
+RUN apk add --no-cache libc6-compat libstdc++ libgcc git
 
 COPY --from=builder /hugo /usr/bin/hugo
 
 WORKDIR /app
 
 COPY . .
+
+RUN git submodule update --init --recursive
 
 CMD ["hugo", "server", "--environment", "production", "--bind", "0.0.0.0", "--port", "1313", "--watch"]
