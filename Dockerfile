@@ -15,6 +15,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN git submodule update --init --recursive
+RUN chmod +x ./start.sh
 
-CMD ["hugo", "server", "--environment", "production", "--bind", "0.0.0.0", "--port", "1313", "--watch"]
+CMD ["./start.sh"]
