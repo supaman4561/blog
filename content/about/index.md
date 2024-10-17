@@ -17,8 +17,7 @@ showViews: false
 showLikes: false
 showAuthor: true
 layoutBackgroundHeaderSpace: false
-
+showComments: false
 ---
-# ME
 
 まだ何も作ってないからみないで
