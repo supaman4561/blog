@@ -3,7 +3,7 @@ title: "minioでブログ用の画像を保存する"
 date: 2024-10-25T00:16:44+09:00
 tags: []
 categories: []
-draft: true
+draft: false
 ---
 
 ブログに画像を貼らないのもどうかなと思うので、minioで画像を保存するスペースを別途確保しました。  
