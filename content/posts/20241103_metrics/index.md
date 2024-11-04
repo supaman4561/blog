@@ -4,7 +4,7 @@ date: 2024-11-03T17:56:34+09:00
 tags: []
 categories: []
 isCJKLanguage: true
-draft: true
+draft: false
 ---
 
 axumでwebサーバーを立ち上げ、/metricsにprometheusで監視したいデータを配信する。
@@ -199,4 +199,4 @@ http_requests_duration_seconds{job="metrics-sample"}
 
 ---
 
-metrics配信サーバーをRust+Axumで構築し、Prometheusでデータ取得、Grafanaのダッシュボード上で表示という一連の流れを構築しました。
+m /etrics配信サーバーをRust+Axumで構築し、Prometheusでデータ取得、Grafanaのダッシュボード上で表示という一連の流れを構築しました。
