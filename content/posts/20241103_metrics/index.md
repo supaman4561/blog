@@ -1,8 +1,8 @@
 ---
 title: "Rust+AxumでPrometheus metrics監視デモ"
 date: 2024-11-03T17:56:34+09:00
-tags: []
-categories: []
+tags: [Rust, Axum, Prometheus, Grafana]
+categories: [Observability]
 isCJKLanguage: true
 draft: false
 ---
