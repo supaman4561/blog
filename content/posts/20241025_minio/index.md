@@ -3,6 +3,7 @@ title: "minioでブログ用の画像を保存する"
 date: 2024-10-25T00:16:44+09:00
 tags: [minio]
 categories: [blog]
+isCJKLanguage: true
 draft: false
 ---
 
