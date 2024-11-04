@@ -199,4 +199,4 @@ http_requests_duration_seconds{job="metrics-sample"}
 
 ---
 
-m /etrics配信サーバーをRust+Axumで構築し、Prometheusでデータ取得、Grafanaのダッシュボード上で表示という一連の流れを構築しました。
+metrics配信サーバーをRust+Axumで構築し、Prometheusでデータ取得、Grafanaのダッシュボード上で表示という一連の流れを構築しました。
